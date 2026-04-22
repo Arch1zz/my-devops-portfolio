@@ -5,61 +5,186 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aday Ualikhan — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
   <div class="noise"></div>
+  <div class="grid-bg"></div>
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-inner">
-      <div class="tag">Portfolio</div>
-      <h1>Aday<br/><span>Ualikhan</span></h1>
-      <p class="title">Student Researcher · Information Systems</p>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">AU</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#pipeline">Pipeline</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="hero-inner">
+      <div class="available-badge">● Available for projects</div>
+      <h1>
+        <span class="name-first">Aday</span>
+        <span class="name-last">Ualikhan</span>
+      </h1>
+      <p class="subtitle">Student Researcher · Information Systems</p>
+      <p class="tagline">Exploring the intersection of data,<br/>automation, and human systems.</p>
+      <div class="hero-links">
+        <a href="#about" class="btn-primary">Explore ↓</a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+      </div>
     </div>
-    <div class="header-deco">AU</div>
+    <div class="hero-deco">AU</div>
   </header>
 
-  <!-- BIO -->
-  <section class="bio">
-    <div class="section-label">// about</div>
-    <p>
-      I am a first-year Information Systems student with a strong interest in how
-      technology shapes the way organizations collect, manage, and use data.
-      I am passionate about understanding the full software development lifecycle —
-      from writing clean front-end code to deploying applications through automated
-      pipelines. My goal is to bridge the gap between technical systems and
-      real-world business problems. I also enjoy learning about DevOps automation and CI/CD pipelines.
-    </p>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-num">01</div>
+    <div class="section-content">
+      <div class="section-label">— About</div>
+      <h2>Who I Am</h2>
+      <p class="lead">
+        I'm <strong>Aday Ualikhan</strong>, a student deeply passionate about
+        Information Systems and how technology shapes the way organizations operate.
+        My interests lie in DevOps culture, data-driven decision-making, and designing
+        systems that are not just functional — but resilient and elegant.
+      </p>
+      <p>
+        I believe that automation is not about replacing people, but about freeing
+        them to focus on what truly matters: creativity, strategy, and innovation.
+        Every pipeline I build is a step toward smarter, more reliable software delivery.
+        I also enjoy learning about CI/CD workflows and front-end development.
+      </p>
+      <div class="facts">
+        <div class="fact">
+          <span class="fact-icon">🎯</span>
+          <span>Currently studying at SDU University</span>
+        </div>
+        <div class="fact">
+          <span class="fact-icon">💡</span>
+          <span>Passionate about automating repetitive tasks</span>
+        </div>
+        <div class="fact">
+          <span class="fact-icon">🚀</span>
+          <span>Goal: build real-world projects through internships</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- SKILLS -->
-  <section class="skills">
-    <div class="section-label">// skills</div>
-    <ul>
-      <li>
-        <span class="skill-num">01</span>
-        <span class="skill-name">HTML</span>
-        <span class="skill-bar"><span style="width:80%"></span></span>
-      </li>
-      <li>
-        <span class="skill-num">02</span>
-        <span class="skill-name">CSS</span>
-        <span class="skill-bar"><span style="width:70%"></span></span>
-      </li>
-      <li>
-        <span class="skill-num">03</span>
-        <span class="skill-name">JavaScript</span>
-        <span class="skill-bar"><span style="width:55%"></span></span>
-      </li>
-    </ul>
+  <section id="skills" class="section section-alt">
+    <div class="section-num">02</div>
+    <div class="section-content">
+      <div class="section-label">— Skills</div>
+      <h2>Currently Learning</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML &amp; CSS</h3>
+          <p>Building structured and styled web pages from scratch. Understanding semantic markup, layouts, and responsive design principles.</p>
+          <div class="skill-level">
+            <span class="level-label">Intermediate</span>
+            <div class="level-bar"><div style="width:75%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Learning DOM manipulation, event handling, and core programming logic to create interactive web experiences.</p>
+          <div class="skill-level">
+            <span class="level-label">Learning</span>
+            <div class="level-bar"><div style="width:50%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>GitHub Actions &amp; CI/CD</h3>
+          <p>Designing automated pipelines that build, test, and deploy code without human intervention — reducing errors and shipping faster.</p>
+          <div class="skill-level">
+            <span class="level-label">Beginner</span>
+            <div class="level-bar"><div style="width:35%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section id="pipeline" class="section">
+    <div class="section-num">03</div>
+    <div class="section-content">
+      <div class="section-label">— Pipeline</div>
+      <h2>The DevOps Lifecycle</h2>
+      <div class="pipeline">
+        <div class="pipe-step">
+          <div class="pipe-icon">📝</div>
+          <div class="pipe-num">01</div>
+          <h4>Plan</h4>
+          <p>Define what to build</p>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">💻</div>
+          <div class="pipe-num">02</div>
+          <h4>Code</h4>
+          <p>Write &amp; commit</p>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">🔨</div>
+          <div class="pipe-num">03</div>
+          <h4>Build</h4>
+          <p>GitHub Actions triggers</p>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">🚀</div>
+          <div class="pipe-num">04</div>
+          <h4>Deploy</h4>
+          <p>Live on GitHub Pages</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="section-num">04</div>
+    <div class="section-content">
+      <div class="section-label">— Contact</div>
+      <h2>Let's Connect</h2>
+      <p class="lead">Always open to collaborate, learn, and build together.</p>
+      <div class="contact-links">
+        <a href="mailto:ualihanadai@gmail.com" class="contact-item">
+          <span class="c-icon">✉️</span>
+          <span>ualihanadai@gmail.com</span>
+        </a>
+        <a href="https://www.instagram.com/se1tzhanov1chh_a?igsh=aXF1dHZ5d3VnNzc0&utm_source=qr" target="_blank" class="contact-item">
+          <span class="c-icon">📸</span>
+          <span>@se1tzhanov1chh_a</span>
+        </a>
+        <a href="https://github.com/Arch1zz" target="_blank" class="contact-item">
+          <span class="c-icon">🐙</span>
+          <span>github.com/Arch1zz</span>
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <span>Last Deployment: <strong>July 10, 2025</strong></span>
-    <span class="footer-right">aday.ualikhan · github.io</span>
+    <span class="footer-name">Aday Ualikhan</span>
+    <span class="footer-copy">© 2025 · All rights reserved</span>
+    <span class="footer-deploy">Last Deployment: <strong>July 10, 2025</strong></span>
   </footer>
 
 </body>
